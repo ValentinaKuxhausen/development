@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'daterangepicker'`, () => {
+  it(`should have as title 'development'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('daterangepicker');
+    expect(app.title).toEqual('development');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('daterangepicker app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('development app is running!');
   });
 });
